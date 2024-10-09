@@ -41,7 +41,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
-import Menu from "@/components/Menu"; // Importera menykomponenten
+import Menu from "@/components/menu"; // Importera menykomponenten
 import type { Metadata } from "next";
 import "./globals.css";
 
