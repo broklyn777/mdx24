@@ -45,10 +45,17 @@ import Menu from "@/components/Menu"; // Importera menykomponenten
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
+// export const metadata: Metadata = {
+//   title: "Next MDX Blog",
+//   description: "A blog built with Next.js and MDX",
+//   icons: ["/avatar.png"],
+// };
+
+export const metadata = {
   title: "Next MDX Blog",
   description: "A blog built with Next.js and MDX",
   icons: ["/avatar.png"],
+  metadataBase: new URL("https://motorsagskortet.vercel.app/"), // Ersätt med din faktiska domän
 };
 
 export default function RootLayout({
