@@ -1,3 +1,5 @@
+// app/test/page.tsx
+import Footer from "@/components/footer";
 export default function TestPage() {
   return (
     <div className="container mx-auto p-4">
@@ -5,4 +7,5 @@ export default function TestPage() {
       <p className="mt-4">Detta är en testundersida för Next.js 14.</p>
     </div>
   );
+  <Footer />;
 }
