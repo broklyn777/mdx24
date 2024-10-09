@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Next MDX Blog",
   description: "A blog built with Next.js and MDX",
-  icons: ["/avatar.png"]
+  icons: ["/avatar.png"],
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="sv"
       className={`${GeistSans.variable} ${GeistMono.variable} bg-slate-50`}
     >
       <body>

@@ -15,21 +15,23 @@ import matter from "gray-matter";
 import Image from "next/image";
 import Link from "next/link";
 import path from "path";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+  ),
   openGraph: {
     images: [
       {
-        url: '/avatar.png',
+        url: "/avatar.png",
         width: 1200,
         height: 630,
       },
     ],
   },
   // ... other metadata properties
-}
+};
 
 export default function Home({ searchParams }) {
   const blogDir = "blogs";
@@ -80,7 +82,7 @@ export default function Home({ searchParams }) {
             height={40}
             className="h-fit"
           />
-          Your Name
+          Motorsågskörkortet
         </div>
         <ModeToggle />
       </header>
