@@ -1,17 +1,215 @@
 ---
-title: "Git Lathund"
-date: "2024-10-09"
+title: "GitHub Lathund02"
+date: "2024-10-10"
 author: "Björn"
-description: "En genomgång av de grundläggande arbetsteknikerna som krävs för ett säkert och effektivt motorsågsarbete, inklusive balans, arbetsställning och säker hantering."
-tags: ["motorsåg", "arbetsteknik", "säkerhet", "grundregler", "skogsarbete"]
-highlightWords: ["arbetsställning", "säkerhet", "balans", "motorsåg", "spänningar"]
-coverImageSrc: "https://example.com/images/arbetsteknik_motorsag.jpg"
+description: "En komplett guide till Git-kommando för hantering av brancher, commits, och mer"
+tags: ["Git", "GitHub", "Versionhantering", "Utveckling"]
+highlightWords: ["Git", "Branch", "Merge", "Commit", "Pull Request"]
+coverImageSrc: "/github-lathund-cover.png"
 ---
 
-# Lathund för Git-kommandon
+# GitHub Lathund
 
-Här är några användbara kommandon för att hantera Git-brancher:
+### 1. Byta branch
+För att byta till en befintlig branch använder du:
 
 ```bash
-git checkout main
-git pull origin main
+git checkout branch-namn
+```
+
+Eller om du använder nyare Git-versioner:
+
+```bash
+git switch branch-namn
+```
+
+### 2. Skapa en ny branch
+För att skapa en ny branch och byta till den direkt:
+
+```bash
+git checkout -b ny-branch-namn
+```
+
+Med git switch kan du också skapa och byta till en ny branch:
+
+```bash
+git switch -c ny-branch-namn
+```
+
+### 3. Visa alla brancher
+För att se en lista över alla lokala och fjärrbrancher:
+
+```bash
+git branch -a
+```
+
+#### kolla vilken som är aktiv nu
+```bash
+git branch 
+```
+
+
+
+### 4. Slå samman en branch med main
+Om du har en fjärrbranch feature-branch och vill slå ihop den med main:
+
+    ```bash
+  git checkout main
+git pull origin main          # Se till att main är uppdaterad
+git pull origin feature-branch # Pull feature-branch till main
+git push origin main           # Pusha de uppdaterade ändringarna till fjärr-`main`
+    ```
+
+
+När du är klar med din branch och vill slå ihop den med main:
+
+1. Byt till main:
+
+    ```bash
+    git checkout main
+    ```
+
+2. Dra in de senaste ändringarna från fjärrservern:
+
+    ```bash
+    git pull origin main
+    ```
+
+3. Slå ihop din branch med main:
+
+    ```bash
+    git merge branch-namn
+    ```
+
+4. Pusha ändringarna till fjärrservern:
+
+    ```bash
+    git push origin main
+    ```
+
+### 5. Ta bort en lokal branch
+När du är klar med en branch kan du ta bort den lokalt:
+
+```bash
+git branch -d branch-namn
+```
+
+Om branchen inte är sammanfogad med main än och du vill tvinga bort den:
+
+```bash
+git branch -D branch-namn
+```
+
+### 6. Ta bort en fjärrbranch
+Om du också vill ta bort en branch från fjärrservern (GitHub):
+
+```bash
+git push origin --delete branch-namn
+```
+
+### 7. Hämta senaste ändringarna från fjärrservern
+För att säkerställa att du har de senaste ändringarna från fjärrbrancherna:
+
+```bash
+git fetch
+```
+
+### 8. Stasha ändringar
+Om du har ändringar som du vill spara temporärt innan du byter branch:
+
+```bash
+git stash
+```
+
+För att återställa de sparade ändringarna:
+
+```bash
+git stash pop
+```
+
+### 9. Klona ett GitHub-repo
+För att klona ett GitHub-repo till din dator:
+
+```bash
+git clone https://github.com/anvandarnamn/repo-namn.git
+```
+
+### 10. Skapa en Pull Request (PR)
+När du har pushat din branch till GitHub och vill skapa en Pull Request:
+
+1. Gå till ditt repo på GitHub.
+2. Välj din branch från listan.
+3. Klicka på "Compare & pull request".
+4. Fyll i informationen och skapa PR.
+
+### 11. Följ status för din branch
+Om du vill kontrollera statusen för dina ändringar innan du gör en commit:
+
+```bash
+git status
+```
+
+### 12. Göra en commit
+För att lägga till ändringar och göra en commit:
+
+1. Lägg till alla ändrade filer:
+
+    ```bash
+    git add .
+    ```
+
+2. Gör en commit med ett meddelande:
+
+    ```bash
+    git commit -m "Ditt meddelande"
+    ```
+
+### 13. Ångra senaste commit (utan att ta bort ändringar)
+Om du vill ångra en commit men behålla filändringarna:
+
+```bash
+git reset --soft HEAD~1
+```
+
+### 14. Ångra ändringar i en specifik fil
+Om du vill återställa en fil till sitt senaste committade tillstånd:
+
+```bash
+git checkout -- filnamn
+```
+
+### 15. Pusha din branch till GitHub
+För att pusha dina ändringar till fjärrservern (GitHub):
+
+```bash
+git push origin branch-namn
+```
+
+### Ytterligare tips
+- **Återställ till en tidigare commit**: Om du vill återgå till ett tidigare tillstånd i din historia:
+
+    ```bash
+    git reset --hard commit-hash
+    ```
+
+- **Se commit-historik**: Om du vill se alla commits i ditt projekt:
+
+    ```bash
+    git log
+    ```
+
+- **Interaktiv rebase**: För att städa upp commits innan du gör en pull request:
+
+    ```bash
+    git rebase -i HEAD~n
+    ```
+    
+    Där `n` är antalet commits du vill redigera.
+
+---
+
+### Förklaring
+- **Kodblock** (`bash`) används för alla Git-kommandon för att ge snygga code snippets.
+- **Strukturen** innehåller alla vanliga Git-kommandon och processer som du behöver för att hantera brancher, commits, merges, och PRs.
+
+Nu har du en färdig guide för din **GitHub-lathund**!
