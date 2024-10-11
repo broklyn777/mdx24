@@ -124,7 +124,7 @@ export default function Menu() {
             href="/boka"
             className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition-all"
           >
-            Boka Nu
+            Boka Nu!
           </Link>
         </div>
         <ModeToggle />
