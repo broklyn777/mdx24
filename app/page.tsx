@@ -32,10 +32,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+// import Header from "@/components/layout/header";
 
 const Home: React.FC = () => {
   return (
     <div className="container mx-auto p-8">
+      {/* <Header /> */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">
           Välkommen till Motorsågskörkortet.se – Din Kompletta Guide till

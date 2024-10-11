@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="border-t mt-auto py-3 bg-dark">
       <div className="flex justify-between">
         <p className="text-light text-sm">
-          © 2024 by The Your Name Blog. All rights reserved.
+          © 2024 by Motorsägskörkortet. All rights reserved.
         </p>
         <a
           className="text-light text-sm hover:underline"

@@ -1,5 +1,5 @@
 // app/test/page.tsx
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/footer";
 export default function TestPage() {
   return (
     <div className="container mx-auto p-4">

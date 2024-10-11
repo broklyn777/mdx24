@@ -1,5 +1,5 @@
 import CopyToClipboard from "@/components/CopyToClipboard";
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/footer";
 import { ModeToggle } from "@/components/mode-toggle";
 import ScrollProgress from "@/components/scroll-progress";
 import TableExport from "@/components/table-export";

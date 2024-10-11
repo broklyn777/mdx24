@@ -4,11 +4,15 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: #fff;
+      /* Vit bakgrund */
+    --foreground: #1e293b;
+   
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: #ffffff;
+      /* Vit bakgrund i hex */
+      --card-foreground: #333333;
+      /* Mörk textfärg i hex */
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -36,8 +40,8 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: #1e293b;
+    --foreground: #f0f0f0;
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;

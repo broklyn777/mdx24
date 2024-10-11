@@ -3,9 +3,9 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -20,8 +20,8 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "var(--background)", // Använd CSS-variabel med hex,
+        foreground: "var(--foreground)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -68,25 +68,25 @@ const config: Config = {
         "slide-in": {
           from: {
             transform: "translateX(-100%)",
-            opacity: "0"
+            opacity: "0",
           },
           to: {
             transform: "translateX(0)",
-            opacity: "1"
-          }
-        }
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "slide-in-animation": "slide-in 0.3s ease-out forwards"
+        "slide-in-animation": "slide-in 0.3s ease-out forwards",
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
       },
     },
   },
-  plugins: [require('@tailwindcss/typography'), require("tailwindcss-animate")]
-}
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
+};
 export default config
