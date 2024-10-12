@@ -39,10 +39,16 @@ const Home: React.FC = () => {
     <div className="container mx-auto p-8">
       {/* <Header /> */}
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">
-          Välkommen till Motorsågskörkortet.se – Din Kompletta Guide till
-          Motorsågsarbete och Säkerhet
-        </h1>
+        <h2 className="mb-4 break-words">
+          <span className="text-2xl sm:text-3xl md:text-4xl font-bold">
+            Välkommen till Motorsågskörkortet.se
+          </span>
+          <br />
+          <span className="text-lg sm:text-xl md:text-2xl font-normal">
+            Din Kompletta Guide till Motorsågsarbete och Säkerhet
+          </span>
+        </h2>
+
         <p className="text-lg">
           Här på <strong>Motorsågskörkortet.se</strong> erbjuder vi all den
           kunskap du behöver för att bli en säker och kompetent
