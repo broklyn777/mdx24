@@ -1,44 +1,14 @@
-// import HeroComponent from "@/components/heroComponent";
-// import { ModeToggle } from "@/components/mode-toggle";
-
-// export default function TestPage() {
-//   return (
-//     <div className="container mx-auto p-4">
-//       <HeroComponent />
-//       <h1 className="text-3xl font-bold">Blogg</h1>
-//       <p className="mt-4">Detta är en testundersida för Next.js 14.</p>
-//     </div>
-//   );
-// }
-
-// import CoursesComponent from "./components/CoursesComponent";
-// import MediaSection from "./components/MediaSection";
-// import VideoSection from "./components/VideoSection";
-
-// const Home = () => {
-//   return (
-//     <div>
-//       <HeroComponent />
-//       {/* <CoursesComponent />
-//       <VideoSection />
-
-//       <MediaSection /> */}
-//     </div>
-//   );
-// };
-
-// export default Home;
-
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import Header from "@/components/layout/header";
+// import HeroSection from "@/components/layout/heroSection";
+// import CardGrid from "@/components/layout/cardGrid";
 
 const Home: React.FC = () => {
   return (
     <div className="container mx-auto p-8">
       {/* <Header /> */}
-      <header className="text-center mb-12">
+      {/* <header className="text-center mb-12">
         <h2 className="mb-4 break-words">
           <span className="text-2xl sm:text-3xl md:text-4xl font-bold">
             Välkommen till Motorsågskörkortet.se
@@ -56,7 +26,9 @@ const Home: React.FC = () => {
           din resa mot motorsågskörkort eller en erfaren användare som vill
           förbättra dina färdigheter, har vi resurserna för dig.
         </p>
-      </header>
+      </header> */}
+      {/* <HeroSection /> */}
+
       <main>
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6">
