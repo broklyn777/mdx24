@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
-    <div className="container mx-auto p-8">
+    <div className=" mt-36   mx-auto">
       {/* <Header /> */}
-      {/* <header className="text-center mb-12">
+      <header className="text-center mb-24">
         <h2 className="mb-4 break-words">
           <span className="text-2xl sm:text-3xl md:text-4xl font-bold">
             Välkommen till Motorsågskörkortet.se
@@ -26,14 +26,15 @@ const Home: React.FC = () => {
           din resa mot motorsågskörkort eller en erfaren användare som vill
           förbättra dina färdigheter, har vi resurserna för dig.
         </p>
-      </header> */}
+      </header>
       {/* <HeroSection /> */}
 
       <main>
-        <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-6">
+        <section className="w-full  bg-slate-100 dark:bg-slate-700 py-10">
+          <h2 className="text-3xl font-semibold mb-6 text-center ">
             Upptäck Viktiga Ämnen och Innehåll
           </h2>
+
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="p-6 border border-gray-200 rounded-lg">
               <h3 className="text-2xl font-semibold mb-4">
@@ -109,7 +110,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </section>
-        <section className="text-center mb-16">
+        <section className="text-center my-10">
           <h2 className="text-3xl font-semibold mb-6">Vår Vision</h2>
           <p className="text-lg mb-4">
             Vi vill ge dig verktygen att använda motorsåg med både skicklighet
@@ -118,7 +119,7 @@ const Home: React.FC = () => {
             kunskap och håller dig uppdaterad om säkerhet och tekniker.
           </p>
         </section>
-        <section className="text-center mb-16">
+        <section className="text-center mb-16 py-14 bg-slate-100 dark:bg-slate-700">
           <h2 className="text-3xl font-semibold mb-6">
             Bli En Del av Gemenskapen
           </h2>
