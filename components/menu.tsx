@@ -8,11 +8,11 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-green-700 text-white shadow-md p-4 relative">
+    <nav className="bg-green-700 text-white shadow-md p-4 z-20 relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Länk till Hem */}
         <Link href="/" className="text-2xl font-bold">
-          Motorsågskörkortet
+          MSK
         </Link>
 
         {/* Hamburgerknapp för mobil, dold när menyn är öppen */}
@@ -119,7 +119,7 @@ export default function Menu() {
           </li>
         </ul>
         {/* Call to Action */}
-        <div className="hidden md:block">
+        <div className=" md:block">
           <Link
             href="/kontakt"
             className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition-all"
