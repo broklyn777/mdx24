@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import HeroSection from "@/components/layout/heroSection";
 import FAQ from "@/components/ui/faq";
-// import CardGrid from "@/components/layout/cardGrid";
 
 const Home: React.FC = () => {
   return (
@@ -36,7 +35,7 @@ const Home: React.FC = () => {
             Upptäck Viktiga Ämnen och Innehåll
           </h2>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mx-10">
             <div className="p-6 border border-gray-200 rounded-lg">
               <h3 className="text-2xl font-semibold mb-4">
                 Skaderisker och Säkerhet
@@ -133,7 +132,7 @@ const Home: React.FC = () => {
         </section>
         <FAQ />
       </main>
-      <footer className="text-center mt-16">
+      {/* <footer className="text-center mt-16">
         <h2 className="text-3xl font-semibold mb-6">
           Vanliga Frågor och Resurser
         </h2>
@@ -145,7 +144,7 @@ const Home: React.FC = () => {
           för att hitta svar på de vanligaste frågorna och fördjupa dig i våra
           resursguider.
         </p>
-      </footer>
+      </footer> */}
     </div>
   );
 };

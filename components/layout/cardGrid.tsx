@@ -21,11 +21,8 @@ import { Shield, Wrench, Tree, Users } from "lucide-react"; // Lägg till ikoner
   <div className="p-6 border border-gray-200 rounded-lg flex items-start">
     <Shield className="h-10 w-10 mr-4 text-green-500" />
     <div>
-      <h3 className="text-2xl font-semibold mb-4">Skaderisker och Säkerhet</h3>
-      <p className="mb-4">
-        Lär dig om de vanligaste skaderiskerna vid motorsågsarbete och hur du
-        bäst skyddar dig.
-      </p>
+      <h3 className="text-2xl font-semibold mb-4">Säkerhet</h3>
+      <p className="mb-4">vid motorsågsarbete och hur du bäst skyddar dig.</p>
       <Link href="/skaderisker" className="text-blue-500 hover:underline">
         Läs mer
       </Link>

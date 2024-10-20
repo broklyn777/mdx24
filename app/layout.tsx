@@ -35,21 +35,15 @@
 //     </html>
 //   );
 // }
-
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import Menu from "@/components/menu"; // Importera menykomponenten
+import Footer from "@/components/layout/footer"; // Importera footer-komponenten
 import type { Metadata } from "next";
 import "./globals.css";
-
-// export const metadata: Metadata = {
-//   title: "Next MDX Blog",
-//   description: "A blog built with Next.js and MDX",
-//   icons: ["/avatar.png"],
-// };
 
 export const metadata = {
   title: "Next MDX Blog",
@@ -77,6 +71,7 @@ export default function RootLayout({
         >
           <Menu /> {/* Lägger till menyn här */}
           {children} {/* Här visas det dynamiska innehållet */}
+          <Footer /> {/* Lägg till footern här */}
           <Analytics />
         </ThemeProvider>
       </body>
